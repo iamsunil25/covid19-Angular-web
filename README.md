@@ -5,4 +5,5 @@ In this covid app i used angular cli for build this project.
 *ng s->for running
 *ng build->for building this project
 
-
+live version of my project
+https://iamsunil25.github.io/covid19-Angular-web/
