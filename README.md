@@ -1,7 +1,7 @@
 # covid19-Angular-web
 covid19 angular web app.
                                                 
-                                                ![alt text](https://miro.medium.com/max/500/1*5Pl6zHi8s_bWPBBYUuV3sg.png)
+                                               ![alt text](https://angular.io/assets/images/logos/angular/angular.png)
                                                 
                                                 
 #Technologies used by me to build this app as below:
