@@ -9,14 +9,14 @@ covid19 angular web app.
                               
 #Technologies used by me to build this app as below:
 
-#1.HTML
-#2.CSS
-#3.TYPESCRIPT,
-#4.BOOTSTRAP
-#5.ANGULAR version 9
-#6.ANGULAR MATERIAL
-#7.NODE.JS
-#8.ANGULAR CLI
+1.HTML<br>
+2.CSS
+3.TYPESCRIPT,
+4.BOOTSTRAP
+5.ANGULAR version 9
+6.ANGULAR MATERIAL
+7.NODE.JS
+8.ANGULAR CLI
 
 
 YOU CAN VISIT TO WATCH LIVE VERSION OF MY APP
