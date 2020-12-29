@@ -1,7 +1,7 @@
 # covid19-Angular-web
 covid19 angular web app.
                                                 
-                                               <img src ="https://angular.io/assets/images/logos/angular/angular.png">
+                                               ![alt text](https://github.com/[iamsunil25]/[covid19-Angular-web]/blob/[master]/angular-10.png?raw=true)
                                                 
                                                 
 #Technologies used by me to build this app as below:
