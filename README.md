@@ -7,7 +7,7 @@ covid19 angular web app.
                                                 
                             
                               
-#Technologies used by me to build this app as below:
+#Technologies used to build this app as below:
 
 1.HTML<br>
 2.CSS<br>
