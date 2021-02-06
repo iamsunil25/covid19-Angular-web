@@ -1,0 +1,42 @@
+  .hover p:hover i {
+     transition: transform .7s;
+    transform: rotateY(360deg);
+  }
+  #about{
+    color: linen;
+    text-align:justify;
+    margin:0 200px;
+  }
+  .TOOLTIP{
+    visibility: hidden;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    background-color: blue;
+    color: #FFF;
+    padding: 10 10px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+.hover div:hover .TOOLTIP {
+  visibility: visible;
+}
+.hover{
+  display: flex;
+ justify-content: center;
+}
+.hover>div{
+  padding:40px;
+}
+@media screen and (max-width:1000px){
+  .hover>div{
+ padding:10px;
+  }
+  .hover{
+    display: flex;
+  }
+  #about{
+    margin: 4px;
+    justify-content:center;
+  }
+}

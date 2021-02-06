@@ -1,0 +1,188 @@
+.centered{
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+.covidchild1{
+  font-size:2.9rem;
+  font-weight: 600;
+  background-color:tomato;
+  color:yellow;
+  text-align: center;
+  padding:40px;
+  }
+  .covidchild2{
+    color:black;
+    font-size:5rem;
+    font-weight: 800;
+    margin: 20px auto;
+    padding: 30px; 
+    width: 500px; 
+    display: block;
+    background-color: mediumspringgreen;
+  }
+  .covidexplain{
+    background-color: blueviolet;
+    max-width: 70%;
+    height:600px;
+    margin: 10px auto;
+  }
+  .covidexplain ul li h1{
+    font-size: 3.5rem;
+    padding: 16px;
+    text-align:left;
+    line-height: 50%;
+    color: whitesmoke;
+    font-weight: 600;
+}
+ 
+ .question{
+  display: inline;
+  color: linen;
+ }
+ .res_text{
+  color:linen; 
+  margin: 0 100px;
+  text-align: justify;
+  font-family:Arial, Helvetica, sans-serif;
+ }
+ table {
+    font-family:Arial, Helvetica, sans-serif;
+  width:800px;
+  margin-left:auto;
+  margin-right: auto;
+  border: 0px;
+  }
+  
+  td, th {
+    border: 0px;
+    text-align:left;
+    border-collapse: collapse;
+    padding-left: 8px;
+  }
+ img {
+    max-width: 100%;
+    height: auto;
+  }
+.responsive{
+  max-width: 100%;
+  height: auto;
+  width: 60%;
+  border-radius: 5px;
+}
+.videor{
+  height: 400px;
+  width: 800px;
+  max-width: 100%;
+}
+ 
+
+  ul li h2::before{
+    color:blue; 
+    content: "\2022";
+     font-weight:bold; 
+     display: inline-block; 
+     width: 1em;
+     margin-left: -1em;
+}
+ul{
+  list-style: none;   
+  margin: 0px; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul,li,h2{
+  margin:.5px;
+}
+  .symp_prec_treat{
+    display: flex;
+    justify-content: center;
+  }
+  .symp_prec_treat>mat-card {
+    text-align: center;
+    width: 250px;
+    margin:0 5px;
+    line-height: 50px;
+    font-size: 30px;
+  }
+mat-card img:hover{
+  -ms-transform: scale(.5); 
+  -webkit-transform: scale(.5); 
+  transform: scale(1.1); 
+  transition: transform .3s;
+}
+.answer{
+  color:linen;
+  text-align: justify;
+  color:gray;
+}
+
+@media screen and (max-width:600px)
+{
+  .symp_prec_treat{
+   flex-direction:column;
+   align-items: center;
+  }
+  .symp_prec_treat>mat-card{
+    margin:5px 0;
+    width: 180px;
+    line-height: 20px;
+  }
+  .videor{
+    height:200px;
+    width: 400px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .res_text{
+    margin: 0 5px;
+  }
+table{
+  width:100%;
+  text-align: justify;
+  
+}
+.responsive{
+  width: 100%;
+}
+}
+@media screen and (max-width:1070px){
+  .covidchild1{
+    font-size:2rem;
+    font-weight:550;
+    background-color:tomato;
+    color:yellow;
+    text-align: center;
+    padding:20px;
+    }
+    .covidchild2{
+      color:black;
+      font-size:2rem;
+      font-weight:500;
+      margin: 10px auto;
+      padding: 5px; 
+      width: 185px; 
+      background-color: mediumspringgreen;
+    }
+    .covidexplain{
+      background-color: blueviolet;
+      max-width: 100%;
+      height:350px;
+      margin: 5px 5px ;
+    }
+    .covidexplain ul li h1{
+      font-size: 1.7rem;
+      padding:0;
+      line-height: 30px;
+      color: whitesmoke;
+      font-weight: 400;
+      text-align: left;
+    }
+    table{
+      width:90%;
+      margin:2px auto;
+      text-align: justify;
+    }
+}
+

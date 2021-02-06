@@ -1,0 +1,126 @@
+#imgg{
+    height:40px;
+    width: 80px;
+    border-radius: 50%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar{
+    position:absolute;
+    top: 189px;
+    left: -200px;
+    width: 200px;
+    height:45%;
+    transition: all .5s ease;
+    z-index: 1;
+}
+ .sidebar header{
+     color: white;
+     text-align: center;
+    user-select: none;
+}
+.sidebar ul a{
+display: block;
+height: 100%;
+width: 100%;
+line-height: 40px;
+text-decoration: none;
+font-size: 1.3rem;
+color: white;
+padding-left: 50px;
+border-right: 50% solid red;
+box-sizing: border-box;
+transition: .4s;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+}
+label #btn{
+left: 3px;
+top:135px;
+font-size: 35px;
+color: white;
+padding: 6px 12px;
+transition: all .5s ease;
+}
+label #cancel{
+z-index: 1111;
+left: -100px;
+top:195px;
+font-size: 52px;
+color: white;
+transition: all .5s ease;
+}
+#check:checked~.sidebar{
+left:0;
+}
+#check:checked~label #btn{
+left: 200px;
+opacity: 0;
+pointer-events:none;
+}
+#check:checked~label #cancel{
+left:74px;
+width: 50px;
+height: 50px;
+}
+.js-is-hidden {
+	display: none;
+}
+#check:checked~label #cancel:hover{
+    background-color:gray;
+}
+a:hover{
+    opacity: .5;
+    color:#111;
+}
+
+
+.csss-selector {
+    background: linear-gradient(180deg,green,blue,red,hotpink);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 35s ease infinite;
+    -moz-animation: AnimationName 35s ease infinite;
+    animation: AnimationName 35s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimationName {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+  }
+  @-moz-keyframes AnimationName {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+  }
+  @keyframes AnimationName {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+  }
+@media screen and (max-width:600px){
+    .sidebar{
+        width: 200px;
+        height:50%; 
+        top: 180px;
+    }
+   label #btn{
+        padding:10px 0;
+        top:127px;
+        font-size: 30px;
+    }
+    label #cancel{
+        top: 197px;
+        
+    }
+}

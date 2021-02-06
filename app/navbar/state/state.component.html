@@ -1,0 +1,56 @@
+<div id="Global">
+  <h2>RAJASTHAN</h2>
+</div>
+<br>
+<div class="navbaar chocolate">
+  <div style="background-color:blue;"><h2>Confirmed<br>{{Rajasthan.confirmed}}</h2></div>
+  <div style="background-color:yellow;"><h2>Active<br>{{Rajasthan.active}}</h2></div>
+  <div style="background-color:green"><h2>Recovered<br>{{Rajasthan.recovered}}</h2></div>
+  <div style="background-color:red;"><h2>Deaths<br>{{Rajasthan.deaths}}</h2></div>
+</div>
+<br>
+<div style="margin: auto;text-align: center;">
+  <mat-form-field class="col-md-4 mx-auto">
+    <mat-label style="color: blue;font-size: 20px;">State</mat-label>
+    <mat-select class="form-control"  [(ngModel)]="selectedStateCode">  
+      <mat-option *ngFor="let data of allData" style="color: black;background: chocolate;" [value]="data.statecode">{{data.state}}</mat-option>  
+    </mat-select></mat-form-field>
+  
+</div>  
+<br>
+
+<div class="contain">
+<div class="center">
+<button  mat-raised-button color="primary" (click)="getStateDataa()">Get Data</button></div></div>
+<br>
+<br>
+<div id="date"><h2>Last Update<br>{{stateData?.lastupdatedtime}}</h2>
+</div>
+<br>
+  <div *ngIf="selectedStateCode==undefined"> 
+  </div>
+
+  <div class="container">
+  <div class="row">
+  <div class="col chart-wrapper">
+  <canvas baseChart
+  [chartType]="barChartType"
+  [data]="barChartData"
+  [labels]="barChartLabels"
+  [colors]="barChartColors">
+  </canvas>
+  </div>
+  </div>
+  </div>
+  <br>
+  <div class="india">
+    <h2>STATE<br>{{stateData?.state | uppercase}}</h2>
+  </div>
+  <br>
+<div class="navbaar chocolate">
+    <div style="background:blue"><h2>Confirmed<br>{{stateData?.confirmed}}</h2></div>
+    <div style="background:yellow"><h2>ACTIVE<br>{{stateData?.active}}</h2></div>
+    <div style="background: green"><h2>Recovered<br>{{stateData?.recovered}}</h2></div>
+    <div style="background:red"><h2>Deaths<br>{{stateData?.deaths}}</h2></div>
+</div>
+<br>

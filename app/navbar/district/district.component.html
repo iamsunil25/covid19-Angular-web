@@ -1,0 +1,65 @@
+<div class="india">
+  <h2>JODHPUR</h2>
+</div>
+<br>
+<div id="navbaar" class="chocolate">
+  <div style="background-color:blue;"><h2>Confirmed<br>{{jodhpur?.confirmed | number}}</h2></div>
+  <div style="background-color:yellow;"><h2>Active<br>{{jodhpur?.active | number}}</h2></div>
+  <div style="background-color:green;"><h2>Recovered<br>{{jodhpur?.recovered | number}}</h2></div>
+  <div style="background-color:red;"><h2>Deaths<br>{{jodhpur?.deceased | number}}</h2></div>
+</div>
+<br>
+
+  <div style="margin: auto;text-align: center;">
+    <div class="col-md-4 mx-auto">
+      <label style="color: purple;font-size: 25px;">State</label>
+      <select  class="form-control" [(ngModel)]="StateSelected" style="color:  black;background: chocolate;font-size: 20px;"(change)='onStateSelectedd($event.target.value)'>
+      <option value="0" hidden ></option>   
+      <option *ngFor="let state of states" [value] ="state.statecode">{{state.state}}</option> 
+      </select>
+    </div>
+  </div>
+  <br>
+    <div style="margin: auto;text-align: center;">
+      <div class="col-md-4 mx-auto">
+        <label style="color: blue;font-size: 25px;">District</label>
+        <select  class="form-control" [(ngModel)]="DistrictSelected" style="color:chocolate;background:black;font-size: 20px;" (change)='getDistrictData($event.target.value)'>  
+        <option value="0" hidden ></option>  
+        <option *ngFor="let district of districtDataaaa" [value] = "district.district">{{district.district}}</option>  
+        </select></div>
+        </div>
+        <br>
+        <div class="contain">
+        <div class="center">
+        <button mat-raised-button color="warn" (click)="getDistrictDataa()">Get Data</button>
+        </div>
+        </div>
+        <br>
+        <div id="date"><h2>Last Update<br>{{currdate?.lastupdatedtime}}</h2>
+        </div>
+        <br>
+        <div class="container">
+          <div class="row">
+              <div class="col chart-wrapper">
+<canvas baseChart
+[chartType]="chartType"
+[data]="chartDataSets"
+[labels]="chartLabels"
+[colors]="chartColors"
+[options]="chartOption">
+</canvas>
+</div>
+</div>
+</div>
+<br>
+<div class="Global">
+  <h2>DISTRICT<br>{{zila | uppercase}}</h2>
+</div>
+<br>
+<div id="navbaar" class="chocolate">
+  <div style="background-color:blue;"><h2>Confirmed<br>{{c | number}}</h2></div>
+  <div style="background-color:yellow ;"><h2>Active<br>{{a | number}}</h2></div>
+  <div style="background-color:green;"><h2>Recovered<br>{{r | number}}</h2></div>
+  <div style="background-color:red ;"><h2>Deaths<br>{{d | number}}</h2></div>
+</div>
+<br>

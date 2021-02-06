@@ -1,0 +1,50 @@
+ul{
+  margin:0 auto ;
+  margin-right: 5px;
+}
+.navlink{
+ margin: 15px;
+    opacity: 1;
+    align-items: center;
+    font-size:1.5rem;
+    color:linen; 
+    text-decoration:none;
+}
+a:hover{
+  opacity: .5;   
+  color:linen;
+}
+
+.csss-selector {
+  background: linear-gradient(180deg, green,blue,red,hotpink);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 35s ease infinite;
+  -moz-animation: AnimationName 35s ease infinite;
+  animation: AnimationName 35s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:48% 0%}
+  50%{background-position:53% 100%}
+  100%{background-position:48% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:48% 0%}
+  50%{background-position:53% 100%}
+  100%{background-position:48% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:48% 0%}
+  50%{background-position:53% 100%}
+  100%{background-position:48% 0%}
+}
+@media screen and (max-width:600px) {
+  .navlink{
+    margin: 4px;
+    font-size:1.2rem;
+  }
+  ul{
+    margin-right: 0;
+  }
+
+}

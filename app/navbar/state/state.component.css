@@ -1,0 +1,67 @@
+#date{
+      margin: 0 auto;
+        font-size: 30px;
+        width: 400px;
+        background:#111;
+        text-align: center;
+        color: chartreuse;
+        line-height: 90px;
+    }
+    .india{
+        background-color:blue;
+        color: linen;
+        margin: 5px auto;
+        padding-top:4px;
+        line-height: 60px;
+        max-width: 300px;
+        text-align: center;
+        }
+        #Global{
+            background-color:blue;
+            color: linen;
+            margin: 5px auto;
+            padding-top:10px;
+            height: 60px;
+            max-width: 150px;
+            text-align: center;
+          }
+.navbaar {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+  .navbaar >div {
+    padding:5px 5px;
+    text-align: center;
+    width: 130px;
+    line-height: 70px;
+    font-size: 30px;
+  }
+ 
+  .contain{
+    position: relative;
+    height:5px;
+}
+.center{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    margin: 0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/*
+hr { display: block;
+      overflow: hidden; 
+      border-style: inset;
+       border-width: 1px;}*/
+@media screen and (max-width:600px){
+    #date{
+       width: 90%;
+    }
+    .navbaar{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+}

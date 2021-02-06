@@ -1,0 +1,18 @@
+<div id="Global"><h1>Global</h1></div><br>
+<div class="navbaar">
+    <div  style="background-color:blue;"><h2>Total Confirmed<br>{{india?.TotalConfirmed |number}}</h2></div>
+    <div  style="background-color:green;"><h2> Total Recovered<br>{{india?.TotalRecovered |number}}</h2></div>
+    <div  style="background-color:red;"><h2>Total <br>Deaths<br> {{india?.TotalDeaths |number}}</h2></div>
+    <div   style="background-color:cornflowerblue"><h2>New Confirmed<br>{{india?.NewConfirmed |number}}</h2></div>
+    <div  style="background-color:#90EE90;"><h2>New Recovered<br>{{india?.NewRecovered |number}}</h2></div>
+     <div  style="background-color:brown;"><h2>New <br>Deaths<br>{{india?.NewDeaths |number}}</h2></div>
+    </div>
+    <br>
+  <div class="date"><h2>Last Update<br>{{date?.Date | date:'medium'}}</h2></div><br>
+  <div  style="max-width: 1000px;margin: 10px auto;">
+<canvas baseChart
+[chartType]="pieChartType"
+[datasets]="pieChartData"
+[labels]="pieChartLabels"
+[colors]="pieChartColors">
+</canvas></div><br>

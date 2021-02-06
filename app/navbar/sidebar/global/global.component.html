@@ -1,0 +1,42 @@
+<div style="text-align: center;color: linen;">
+    <h1 style="font-weight: 700;">India Covid-19 Helpline Number: <br><h1 style="font-size: 30px;font-weight: 600;color:blue;">+911123978046</h1></h1>
+    <h1 style="font-weight: 700;">Covid-19 Helpline Number of States</h1>
+</div>
+<table class="mat-elevation-z8" mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="Position">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell *matCellDef="let element">{{element.Position}}</td>  
+    </ng-container>
+    <ng-container matColumnDef="Statee">
+        <th mat-header-cell *matHeaderCellDef>State </th>
+        <td mat-cell *matCellDef="let element">{{element.Statee}}</td>  
+    </ng-container>
+    <ng-container matColumnDef="HelplineNo">
+        <th mat-header-cell *matHeaderCellDef >Helpline No.</th>
+        <td mat-cell *matCellDef="let element">{{element.HelplineNo}}</td>  
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumn"></tr>
+    <tr mat-row *matRowDef="let row;columns:displayedColumn;"></tr>
+</table>
+<br>
+<br>
+<div style="text-align: center;">
+    <h1 style="color:linen;font-weight: 700;">Covid-19 Helpline Number of Union Territories (UTs)</h1>
+</div>
+<table class="mat-elevation-z8" mat-table [dataSource]="dataSource1">
+    <ng-container matColumnDef="Position">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell *matCellDef="let element">{{element.Position}}</td>  
+    </ng-container>
+    <ng-container matColumnDef="Territory">
+        <th mat-header-cell *matHeaderCellDef>Territory</th>
+        <td mat-cell *matCellDef="let element">{{element.Statee}}</td>  
+    </ng-container>
+    <ng-container matColumnDef="HelplineNo">
+        <th mat-header-cell *matHeaderCellDef >Helpline No.</th>
+        <td mat-cell *matCellDef="let element">{{element.HelplineNo}}</td>  
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumn1"></tr>
+    <tr mat-row *matRowDef="let row;columns:displayedColumn1;"></tr>
+</table>
+<br>

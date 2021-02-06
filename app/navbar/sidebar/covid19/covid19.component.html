@@ -1,0 +1,168 @@
+<br>
+<div style="margin: 0 auto;text-align: center;">
+    <img src="./assets/maincovid2.jpg" alt="covid19image" class="responsive">
+</div>
+<br>
+<div class="res_text">
+    <h1>
+    <b>Coronavirus</b> disease <b>(COVID-19)</b> is an infectious disease caused by a newly discovered <b>coronavirus</b>.
+    Most people infected with the <b>COVID-19</b> virus will experience mild to moderate respiratory illness and recover without
+    requiring special treatment.<br>Older people, and those with underlying medical problems like cardiovascular disease, diabetes,
+    chronic respiratory disease, and cancer are more likely to develop serious illness.
+    </h1>
+</div>
+<br>
+ 
+<div class="covidexplain">
+    <h1 class="covidchild1">CORONAVIRUS</h1>
+    <div>
+    <h1 class="covidchild2">'COVID-19' ?</h1></div>
+    <ul>
+        <li><h1><b>'CO'</b> stands for corona</h1></li>
+        <li><h1><b>'VI'</b> for virus</h1></li>
+        <li><h1><b>'D'</b> for disease </h1></li>
+        <li><h1><b>'19' for</b> 2019-first identified</h1></li>
+    </ul>
+</div>
+<br>
+<div class="symp_prec_treat">
+    <mat-card style="background-color: aqua;">
+        <mat-card-header style="justify-content: center;background-color: maroon;" >
+            <mat-card-title style="margin: 2px auto;color: linen;" >SYMPTOMS</mat-card-title>
+        </mat-card-header>
+        <a routerLink="/covid/symptoms"><img src="./assets/symptoms.png" alt ="symptoms" style="width: 250px;background-color: red;"></a> 
+    </mat-card>
+    <mat-card style="background-color: aqua;"> 
+        <mat-card-header  style="justify-content: center;background-color: maroon;">
+            <mat-card-title style="margin: 2px auto;color: linen;" >PRECAUTIONS</mat-card-title>
+        </mat-card-header>
+        <a routerLink="/covid/precaution"><img src="./assets/precaution.png" alt="precaution"></a>
+    </mat-card>
+    <mat-card style="background-color: aqua;"> 
+        <mat-card-header  style="justify-content: center;background-color: maroon;">
+            <mat-card-title style="margin:2px auto;color: linen;" >TREATMENTS</mat-card-title>
+        </mat-card-header>
+        <a routerLink="/covid/treatment"><img src="./assets/treatment11.jpg" alt="treatment" style="background-color:blue;"></a>
+    </mat-card>
+</div>
+<br>
+<br>
+<h1 style="text-align: center;color:linen">Recently asked some question related to <b>COVID-19</b> <br>(tap on the question to get answer)</h1>
+<table>
+    <tr>
+        <td>
+            <h1 class="question" (click)="toggle1()">Q. &nbsp;What are coronaviruses?</h1>
+            <h1 *ngIf="show1" class="answer">
+            <b style="color: mediumblue;">=> </b> Coronaviruses are large group of viruses that cause illness in humans and animals.
+            Rarely, animal coronaviruses can evolve and infect people and then spread between 
+            people such as has been seen with MERS and SARS.
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h1 class="question" (click)="toggle2()" style="display: inline;">Q. &nbsp;How does COVID-19 spread?</h1>
+            <h1 *ngIf="show2" class="answer">
+            <b style="color: mediumblue;">=> </b> People can catch COVID-19 from others who have the virus. The disease spreads primarily from person to person 
+            through small droplets from the nose or mouth, which are expelled when a person with COVID-19 coughs, sneezes, 
+            or speaks.These droplets are relatively heavy, do not travel far and quickly sink to the ground. People can catch
+            COVID-19 if they breathe in these droplets from a person infected with the virus.This is why it is important to 
+            stay at least 1 meter) away from others. These droplets can land on objects and surfaces around the person such as tables,
+            doorknobs and handrails. 
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h1 class="question" (click)="toggle3()">Q.&nbsp;Can COVID-19 be caught from a person who has no symptoms?</h1>
+            <h1 *ngIf="show3" class="answer">
+            <b style="color: mediumblue;">=> </b> COVID-19 is mainly spread through respiratory droplets expelled by someone who is coughing or has
+            other symptoms such as fever or tiredness. Many people with COVID-19 experience only mild symptoms. 
+            This is particularly true in the early stages of the disease.
+            It is possible to catch COVID-19 from someone who has just a mild cough and does not feel ill.
+            </h1> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h1 class="question" (click)="toggle4()">Q.&nbsp;Is there a vaccine, drug or treatment for COVID-19?</h1>
+            <h1 *ngIf="show4" class="answer">
+            <b style="color: mediumblue;">=> </b> while some traditional western or homw remedies may provide comfort and alleviate symptoms
+            of mild COVID-19 there are no medicine that have been show to prevent or cure the disease.  
+            WHO does not recommend self-medication with any medicines, including antibiotics, 
+            as a prevention or cure for COVID-19. However, there are several ongoing clinical trials of
+            both western and traditional medicines. 
+            </h1>
+        </td>
+    </tr>
+   <tr>
+        <td> 
+            <h1 class="question" (click)="toggle5()">Q.&nbsp;How dangerous is the coronavirus disease?</h1>
+            <h1 *ngIf="show5" class="answer">
+            <b style="color: mediumblue;">=> </b> Although for most people COVID-19 causes only mild illness, it can make some people very ill. More rarely,
+            the disease can be fatal. Older people, and those with
+            pre- existing medical conditions (such as high blood pressure, heart problems or diabetes) appear to be more vulnerable.
+            </h1>
+        </td>
+    </tr>
+   <tr>
+        <td>
+            <h1 class="question" (click)="toggle6()">Q.&nbsp;What happens when you get the coronavirus disease?</h1>
+            <h1 *ngIf="show6" class="answer">
+            <b style="color: mediumblue;">=> </b> People with COVID-19 generally develop signs and symptoms, including mild respiratory symptoms and fever, on an a
+            infection (mean incubation period 5-6 days, range 1-14 days). Most people infected with COVID-19 virus
+            have mild disease and recover.
+           </h1>
+        </td>
+    </tr>
+    <tr>
+        <td> 
+            <h1 class="question" (click)="toggle7()">Q.&nbsp;Is hand sanitizer effective against COVID-19?</h1>
+            <h1 *ngIf="show7" class="answer">
+        
+            <b style="color: mediumblue;">=> </b> The best way to prevent the spread of infections and decrease the risk of getting sick is by washing your 
+            hands with plain soap and water, advises the CDC. Washing hands often with soap and water for at least 20 seconds is essential, 
+            especially after going to the bathroom; before eating; and after coughing, sneezing, or blowing one’s nose. If soap and water are
+            not available, 
+            CDC recommends consumers use an alcohol-based hand sanitizer that contains at least 60% alcohol.
+            </h1>
+        </td>
+    </tr>
+    <tr>
+       <td> 
+            <h1 class="question" (click)="toggle8()">Q.&nbsp;What is the recovery time for the coronavirus disease?</h1>
+            <h1 *ngIf="show8" class="answer">
+            <b style="color: mediumblue;">=> </b>  Using available preliminary data, the median time from onset to clinical recovery for mild cases
+            is approximately 2 weeks and is 3-6 weeks for patients with severe or critical disease.
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td> 
+            <h1 class="question" (click)="toggle9()">Q.&nbsp;Is headache a symptom of the coronavirus disease?</h1>
+            <h1 *ngIf="show9" class="answer">
+            <b style="color: mediumblue;">=> </b>  The virus can cause a range of symptoms, from ranging from mild illness to pneumonia. 
+            Symptoms of the disease are fever, cough, sore throat and headaches.
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td> 
+            <h1 class="question" (click)="toggle10()">Q.&nbsp;How should I wear and care for a fabric mask?</h1>
+            <ul *ngIf="show10" class="answer">
+                <li><h2>Clean your hands before putting on the mask.</h2></li>
+                <li><h2>Inspects the mask for tears do not use a mask that is damaged.</h2></li>
+                <li><h2>Adjust the mask to cover your mouth, nose and chin leaving no gapes.</h2></li>
+                <li><h2>Avoid touching the mask while wearing it.</h2></li>
+                <li><h2>Change your mask if it gets dry or wet.</h2></li>
+                <li><h2>Clean your hand before taking off the mask.</h2></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<br>
+<div style="text-align: center;margin: 0 auto;">
+    <iframe class="videor" [src] = "safeUrl"  frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope;" ></iframe>
+</div>
+<br>
+  

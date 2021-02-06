@@ -1,0 +1,50 @@
+.h11{
+    font-size:40px;
+    color: lawngreen;
+    text-align: center;
+}
+#span{
+    font-size: 3rem;
+    color:darkblue;
+}
+.imgapp{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+}
+.tracker{
+    padding-top:20px;
+    font-weight: 700;
+    display: inline;
+    color:blue;
+    text-align:center;
+    font-size: 50px;
+}
+.covid{
+    padding-top:20px;
+    font-weight: 700;
+    display: inline;
+    color:red;
+    text-align:center;
+    font-size: 50px;
+}
+@media screen and (max-width:510px){
+    .h11{
+        font-size:29px;
+    }
+    .covid{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .tracker{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .imgapp{
+        width:55px;
+        height:55px;
+        border-radius: 50%;
+        margin-top: 9px;
+    }
+    
+}

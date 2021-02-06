@@ -1,0 +1,21 @@
+
+tr:hover{
+    background-color: green;
+}
+table{
+    width: 100%;
+    background-color: black;
+}
+th.mat-header-cell, td.mat-cell {
+    text-align: center;
+    border: .5px solid #CCC;
+    padding: 0 !important;
+    color:white;
+}
+th.mat-header-cell{
+    background-color:orangered;
+    font-size:20px;
+}
+td.mat-cell{
+    font-size: 20px;
+}

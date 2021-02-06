@@ -1,0 +1,60 @@
+<div class="indiaa">
+    <h2>{{india?.Country | uppercase}}</h2>
+</div>
+<br>
+    <div class="navbaar">
+        <div style="background-color:blue;"><h2>Total Confirmed<br>{{india?.TotalConfirmed | number}}</h2></div>
+        <div style="background-color:green;"><h2> Total Recovered<br>{{india?.TotalRecovered | number}}</h2></div>
+        <div style="background-color:red;"><h2>Total Deaths<br> {{india?.TotalDeaths}}</h2></div>
+        <div style="background-color:cornflowerblue"><h2>New Confirmed<br>{{india?.NewConfirmed | number}}</h2></div>
+        <div style="background-color:#90EE90;"><h2>New Recovered<br>{{india?.NewRecovered | number}}</h2></div>
+        <div style="background-color:brown;"><h2>New <br>Deaths<br>{{india?.NewDeaths | number}}</h2></div>
+    </div>
+    <br>
+        <div class="date">
+            <h2>Last Update<br>{{date?.Date | date:"medium"}}</h2>
+        </div>
+        <br>
+    <div class="country">
+        <mat-form-field>
+        <mat-label style="font-size: 20px;color: purple;">Country</mat-label>
+        <mat-select  class="form-control"  [(ngModel)]="Selectedcnt" style="color: blue;">
+        <mat-option *ngFor="let count of countries" style="color:black;background-color: chocolate;" [value]="count.Country">
+        {{count.Country}}
+        </mat-option>
+        </mat-select>
+        </mat-form-field>
+    </div>
+<br>
+<div class="contain">
+<div class="center">
+    <button mat-raised-button color="accent"  (click)="getCorona()">Get Data</button>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col chart-wrapper">
+<canvas baseChart
+[chartType]="pieChartType"
+[data]="pieChartData"
+[labels]="pieChartLabels"
+[colors]="pieChartColors">
+</canvas>
+</div>
+</div>
+</div>
+<br>
+<div class="india"><h2>COUNTRY<br>{{SelectedCountry.Country | uppercase}}</h2>
+</div>
+<br>
+<div class="navbaar chocolate">
+<div style="background-color: blue ;"><h2>Total Confirmed<br>{{SelectedCountry.TotalConfirmed}}</h2></div>
+<div style="background-color:green;"><h2>Total Recovered<br>{{SelectedCountry.TotalRecovered}}</h2></div>
+<div style="background-color:red;"><h2>Total Deaths<br>{{SelectedCountry.TotalDeaths}}</h2></div>
+<div style="background-color:cornflowerblue;"><h2>New Confirmed<br>{{SelectedCountry.NewConfirmed}}</h2></div>
+<div style="background-color: #90EE90;"><h2>New Recovered<br>{{SelectedCountry.NewRecovered}}</h2></div>
+<div style="background-color:brown;"><h2>New <br>Deaths<br>{{SelectedCountry.NewDeaths}}</h2></div></div><br>
+<div *ngIf="Selectedcnt==undefined"></div>

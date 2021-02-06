@@ -1,0 +1,96 @@
+.flex-container{
+    width: 100%;
+    margin: 0px;
+    opacity: .85;
+    height: 150px;
+    justify-content: center;
+    background-color:black;
+}
+.flex-containerr{
+    width: 100%;
+    margin: 0px;
+    height: 150px;
+    justify-content: center;
+}
+.date{
+    text-align: center;
+    font-size: 30px;
+    width: 350px;
+    background:#111;
+    margin:0 auto;
+    color: chartreuse;
+    line-height: 100px;
+}
+#div1{
+    text-align: center;
+    font-size: 30px;
+    width: 150px;
+    display: inline-block;
+    margin: 20.5px;
+    line-height: 100px;
+}
+
+.india{
+background-color:purple;
+color: linen;
+margin: 5px auto;
+padding-top:4px;
+line-height: 60px;
+max-width: 300px;
+text-align: center;
+}
+.indiaa{
+    background-color:purple;
+    color: linen;
+    margin: 5px auto;
+    padding-top: 11px;
+    padding-bottom: 1px;
+    line-height: 60px;
+    max-width: 150px;
+    text-align: center;
+    }
+
+.navbaar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbaar >div {
+    text-decoration: none;
+    padding:14px 20px;
+    text-align: center;
+    width: 150px;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .contain{
+      position: relative;
+      height: 5px;
+  }
+  .center{
+      position:absolute;
+      top:50%;
+      left: 50%;
+      margin: 0;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+  .scrollable-element {
+    scrollbar-color: red yellow;
+  }
+  .country{
+      text-align: center;
+  }
+  mat-form-field{
+      width: 350px;
+  }
+  @media screen and (max-width:500px) {
+    mat-form-field{
+        width:90%;
+    }
+    .date{
+        width: 90%;
+    }
+  }
+
+

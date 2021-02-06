@@ -1,0 +1,37 @@
+.date{
+    text-align: center;
+    
+        font-size: 30px;
+        width:320px; 
+        color: chartreuse;
+        background-color: #111;
+        margin: 10px auto;
+        line-height: 60px;}
+    .navbaar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .navbaar>div {
+        text-decoration: none;
+        padding:10px 10px;
+        text-align: center;
+        width: 150px;
+        line-height: 70px;
+        font-size: 30px;
+      }
+      #Global{
+        background-color:pink;
+        color: orangered;
+        margin: 5px auto;
+        padding-top: 12px;
+        height: 60px;
+        max-width: 150px;
+        text-align: center;
+      }
+      
+      @media screen and (max-width: 640px) {
+       .navbaar{
+           margin:20px;
+       }
+          }
